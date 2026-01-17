@@ -1,11 +1,11 @@
-# RLTradeNet 🧠📈  
+# RLTradeNet  
 **A Self-Learning Forex Trading Engine Using Reinforcement Learning (LSTM + DQN)**
 
 RLTradeNet is an open-source deep reinforcement learning (RL) framework designed to train AI agents to trade forex markets with no prior strategy or indicators. The model learns by trial and error, improving with each episode through a reward-based system. It supports multi-timeframe models and visual feedback of trades to evaluate performance.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Action-based reinforcement learning (DQN + LSTM)
 - Separate models per timeframe (15M & 1H currently)
@@ -17,7 +17,7 @@ RLTradeNet is an open-source deep reinforcement learning (RL) framework designed
 
 ---
 
-## 🧠 Strategy & Learning Logic
+##  Strategy & Learning Logic
 
 This EA uses a **Deep Q-Learning (DQN)** model enhanced with **Long Short-Term Memory (LSTM)** to learn temporal patterns in price movements. Initially, it explores randomly, assigning values (Q-values) to each action (Buy, Sell, Hold). Over time, it minimizes its regret by updating its policy through reward feedback.
 
@@ -25,7 +25,7 @@ We also implement **epsilon-greedy exploration**, **experience replay**, and **t
 
 ---
 
-## 📐 Mathematical Foundation
+##  Mathematical Foundation
 
 ### 1. **Reinforcement Learning (DQN)**
 
@@ -55,12 +55,12 @@ Future versions will integrate a **DeepSeek-inspired reward module**, allowing m
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 RLTradeNet/ ├── data/ # Historical price data (CSV format) ├── models/ # Saved models for each timeframe ├── train.py # Main training loop ├── visualize.py # Trade visualizer with matplotlib ├── environment.py # Custom ForexEnv (gym-like) ├── agent.py # DQN-LSTM agent ├── config.py # Hyperparameters └── README.md
 
 ---
 
-## 📊 Timeframes & Setup
+##  Timeframes & Setup
 
 Currently supports:
 - **15-Minute** model (`model_15m.pt`)
@@ -70,7 +70,7 @@ Each model is trained independently using its respective dataset. Make sure you 
 
 ---
 
-## 🧪 Training
+##  Training
 
 ```bash
 # Example
